@@ -1,4 +1,33 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+body {
+  margin: 0;
+}
+
+.app {
+  --primary-color: #a2dbfa;
+  --primary-color-selected: #39a2db;
+  --primary-color-contrast: #053742;
+  --font-family-regular: "Poppins", sans-serif;
+
+  font-family: var(--font-family-regular);
+}
+
+.app__navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar__link {
+  color: var(--primary-color-contrast);
+  text-decoration: none;
+  padding: 1rem;
+}
+.navbar__link:hover {
+  background-color: var(--primary-color-selected);
+}
+
+.navbar__link-selected {
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--primary-color-selected);
 }

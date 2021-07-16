@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./styles.css";
 
 const Water = () => {
   const [temperature, setTemperature] = useState(18);
@@ -16,13 +17,18 @@ const Water = () => {
   };
 
   return (
-    <div>
-      <input type="text" onChange={handleChangeInput} value={temperature} />
-      <p className={`stateOfMatter ${className}`}>
+    <section className="water">
+      <input
+        type="text"
+        className="water__input"
+        onChange={handleChangeInput}
+        value={temperature}
+      />
+      <p className={`water__text ${className}`}>
         At {temperature}°C, water is considered to be a<b>"{stateOfMatter}"</b>{" "}
         state of matter.
       </p>
-    </div>
+    </section>
   );
 };
 

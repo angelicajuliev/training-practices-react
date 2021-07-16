@@ -11,14 +11,14 @@ const ToDo = (props) => {
   };
 
   return (
-    <section className="todo">
+    <article className="todo">
       <input
         type="checkbox"
         onChange={handleChangeComplete}
         checked={isCompleted}
       />
-      <p className="todo-completed"> {text} </p>
-    </section>
+      <p className={isCompleted && "todo-completed"}> {text} </p>
+    </article>
   );
 };
 ToDo.defaultProps = {

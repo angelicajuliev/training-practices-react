@@ -1,0 +1,32 @@
+.water {
+  display: flex;
+  flex-direction: column;
+}
+
+.water__text {
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 3px;
+}
+
+.water__input {
+  font-size: 1rem;
+  margin: 1rem auto 0;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+}
+
+.state-solid {
+  background-color: #000029;
+}
+
+.state-liquid {
+  background-color: blue;
+}
+
+.state-gas {
+  background-color: #d3d3d3;
+}
